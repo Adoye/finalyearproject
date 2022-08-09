@@ -17,6 +17,13 @@ app = Flask(__name__)
 # add db
 app.config['SECRET_KEY'] = "mykey"
 
+class UserForm(FlaskForm):
+      name = StringField("Your Name", validator=[DataRequired])
+      email = StringField("Your Email", validator=[DataRequired])
+      subject = StringField("Your Subject", validator=[DataRequired])
+      message = StringField("Message", validator=[DataRequired])
+      submit = SubmitField("Submit")
+
 # Creaate a form class
 class NamerForm(FlaskForm):
       name = StringField("What is your name", validators=[DataRequired()])
@@ -30,6 +37,8 @@ class Users(db.Model):
       id = db.Column(db.Integer, primary_key=True)
       name = db.Column(db.String(200), nullable=False)
       email = db.Column(db.String(120), nullable=False, unique=True)
+      subject = db.Column(db.String(4820), nullable=False, unique=True)
+      message = db.Column(db.String(4820), nullable=False, unique=True)
       date_added = db.Column(db.DateTime, default=datetime.utcnow)
       
       # create a string
@@ -47,7 +56,8 @@ def index():
 def shop():
      return render_template("shop.html")
 
-@app.route('/contact')
+@app.route('/contact', methods=['GET', 'POST'])
 
 def contact():
-     return render_template("contact.html")
+      form = UserForm()
+      return render_template("contact.html")
