@@ -1390,7 +1390,7 @@ h3.sidebar-title::before {
 12. breadcrumb-area
 -------------------------------------*/
 .breadcrumb-area {
-  background: rgba(0, 0, 0, 0) url("img/DP_SS22_LookBook_02_10813.jpg") no-repeat scroll center top;
+  background: rgba(0, 0, 0, 0) url("/static/img/DP_SS22_LookBook_02_10813.jpg") no-repeat scroll center top;
   padding: 215px 0 135px;
   position:relative
 }
