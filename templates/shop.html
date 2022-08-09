@@ -12,25 +12,25 @@
 
 		<!-- all css here -->
 		<!-- bootstrap v3.3.6 css -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css')}}">
 		<!-- animate css -->
-        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.css')}}">
 		<!-- jquery-ui.min css -->
-        <link rel="stylesheet" href="css/jquery-ui.min.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/jquery-ui.min.css')}}">
 		<!-- meanmenu css -->
-        <link rel="stylesheet" href="css/meanmenu.min.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/meanmenu.min.css')}}">
 		<!-- owl.carousel css -->
-        <link rel="stylesheet" href="css/owl.carousel.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.css')}}">
 		<!-- nivo-slider css -->
-        <link rel="stylesheet" href="lib/css/nivo-slider.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='lib/css/nivo-slider.css')}}">
 		<!-- font-awesome css -->
-        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css')}}">
 		<!-- style css -->
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
 		<!-- responsive css -->
-        <link rel="stylesheet" href="css/responsive.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css')}}">
 		<!-- modernizr js -->
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <script src="{{ url_for('static', filename='js/vendor/modernizr-2.8.3.min.js')}}"></script>
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -48,7 +48,7 @@
 						<div class="row">
 							<div class="col-md-2 col-sm-4 col-xs-5">
 								<div class="logo">
-									<a href="index.html"><img src="img/Asset 2.png" alt="" /></a>
+									<a href="index.html"><img src="{{ url_for('static', filename='img/Asset 2.png')}}" alt="" /></a>
 								</div>
 							</div>
 							<div class="col-md-8 hidden-xs hidden-sm">
@@ -175,7 +175,7 @@
 									<ul>
 										<li>
 											<div class="cart-img">
-												<a href="#"><img alt="" src="img/cart/1.jpg"></a>
+												<a href="#"><img alt="" src="{{ url_for('static', filename='img/cart/1.jpg')}}"></a>
 											</div>
 											<div class="cart-info">
 												<h4><a href="#">Vestibulum suscipit</a></h4>
@@ -187,7 +187,7 @@
 										</li>
 										<li>
 											<div class="cart-img">
-												<a href="#"><img alt="" src="img/cart/1.jpg"></a>
+												<a href="#"><img alt="" src="{{ url_for('static', filename='img/cart/1.jpg')}}"></a>
 											</div>
 											<div class="cart-info">
 												<h4><a href="#">Vestibulum suscipit</a></h4>
@@ -393,7 +393,7 @@
 								<div class="single-product">
 									<div class="product-img">
 										<a href="product-details.html">
-										<img src="img/product/P201123084405-Fullbody-881_45ff5193-8868-4f36-bb28-e0067426f00d_500x.jpg" alt="" />
+										<img src="{{ url_for('static', filename='img/product/P201123084405-Fullbody-881_45ff5193-8868-4f36-bb28-e0067426f00d_500x.jpg')}}" alt="" />
 										<!-- <img class="secondary-img" src="img/product/12.jpg" alt="" /> -->
 									</a>
 									</div>
@@ -408,7 +408,7 @@
 								<div class="single-product">
 									<div class="product-img">
 										<a href="product-details.html">
-										<img src="img/product/Resort_DayOne-1605_500x.jpg" alt="" />
+										<img src="{{ url_for('static', filename='img/product/Resort_DayOne-1605_500x.jpg')}}" alt="" />
 										<!-- <img class="secondary-img" src="img/product/14.jpg" alt="" /> -->
 									</a>
 									</div>
@@ -423,7 +423,7 @@
 								<div class="single-product">
 									<div class="product-img">
 										<a href="product-details.html">
-										<img src="img/product/P201123084405-Fullbody-457_f38a602b-3222-468b-bcb8-27ee72698793_500x.jpg" alt="" />
+										<img src="{{ url_for('static', filename='img/product/P201123084405-Fullbody-457_f38a602b-3222-468b-bcb8-27ee72698793_500x.jpg')}}" alt="" />
 										<!-- <img class="secondary-img" src="img/product/7.jpg" alt="" /> -->
 									</a>
 									</div>
@@ -543,7 +543,7 @@
 											<div class="single-product">
 												<div class="product-img">
 													<a href="product-details.html">
-										<img src="img/product/pexels-godisable-jacob-914668.jpg" alt="" />
+										<img src="{{ url_for('static', filename='img/product/pexels-godisable-jacob-914668.jpg')}}" alt="" />
 										<!-- <img class="secondary-img" src="img/product/1.jpg" alt="" /> -->
 									</a>
 													<span class="tag-line">new</span>
@@ -572,7 +572,7 @@
 											<div class="single-product">
 												<div class="product-img">
 													<a href="product-details.html">
-										<img src="img/product/P201123084405-Fullbody-457_f38a602b-3222-468b-bcb8-27ee72698793_500x.jpg" alt="" />
+										<img src="{{ url_for('static', filename='img/product/P201123084405-Fullbody-457_f38a602b-3222-468b-bcb8-27ee72698793_500x.jpg')}}" alt="" />
 										<!-- <img class="secondary-img" src="img/product/7.jpg" alt="" /> -->
 									</a>
 													<span class="tag-line">new</span>
@@ -601,7 +601,7 @@
 											<div class="single-product">
 												<div class="product-img">
 													<a href="product-details.html">
-										<img src="img/product/Resort_DayOne-1605_500x.jpg" alt="" />
+										<img src="{{ url_for('static', filename='img/product/Resort_DayOne-1605_500x.jpg')}}" alt="" />
 										<!-- <img class="secondary-img" src="img/product/14.jpg" alt="" /> -->
 									</a>
 													<span class="tag-line">new</span>
@@ -630,7 +630,7 @@
 											<div class="single-product">
 												<div class="product-img">
 													<a href="product-details.html">
-														<img src="img/product/P201123084405-Fullbody-881_45ff5193-8868-4f36-bb28-e0067426f00d_500x.jpg" alt="" />
+														<img src="{{ url_for('static', filename='img/product/P201123084405-Fullbody-881_45ff5193-8868-4f36-bb28-e0067426f00d_500x.jpg')}}" alt="" />
 														<!-- <img class="secondary-img" src="img/product/12.jpg" alt="" /> -->
 													</a>
 													<span class="tag-line">new</span>
@@ -659,7 +659,7 @@
 											<div class="single-product">
 												<div class="product-img">
 													<a href="product-details.html">
-														<img src="img/product/desktop_banners_4_desktop_jumpsuitrompers_900x.jpg" alt="" />
+														<img src="{{ url_for('static', filename='img/product/desktop_banners_4_desktop_jumpsuitrompers_900x.jpg')}}" alt="" />
 														<!-- <img class="secondary-img" src="img/product/6.jpg" alt="" /> -->
 													</a>
 													<span class="tag-line">new</span>
@@ -688,7 +688,7 @@
 											<div class="single-product">
 												<div class="product-img">
 													<a href="product-details.html">
-														<img src="img/product/desktop_banners_4_mobile_matchingsets_700x.jpg" alt="" />
+														<img src="{{ url_for('static', filename='img/product/desktop_banners_4_mobile_matchingsets_700x.jpg')}}" alt="" />
 														<!-- <img class="secondary-img" src="img/product/8.jpg" alt="" /> -->
 													</a>
 													<span class="tag-line">new</span>
@@ -717,7 +717,7 @@
 											<div class="single-product">
 												<div class="product-img">
 													<a href="product-details.html">
-														<img src="img/product/CloudBlue-Man_b6f4c575-19d1-43ac-8d52-32a45e3defa3_900x.jpg" alt="" />
+														<img src="{{ url_for('static', filename='img/product/CloudBlue-Man_b6f4c575-19d1-43ac-8d52-32a45e3defa3_900x.jpg')}}" alt="" />
 														<!-- <img class="secondary-img" src="img/product/2.jpg" alt="" /> -->
 													</a>
 													<span class="tag-line">new</span>
@@ -746,7 +746,7 @@
 											<div class="single-product">
 												<div class="product-img">
 													<a href="product-details.html">
-														<img src="img/product/DARKGREYREILDSHORTMENFRONT_1_900x.jpg" alt="" />
+														<img src="{{ url_for('static', filename='img/product/DARKGREYREILDSHORTMENFRONT_1_900x.jpg')}}" alt="" />
 														<!-- <img class="secondary-img" src="img/product/10.jpg" alt="" /> -->
 													</a>
 													<span class="tag-line">new</span>
@@ -775,7 +775,7 @@
 											<div class="single-product">
 												<div class="product-img">
 													<a href="product-details.html">
-														<img src="img/product/ECAP-beige_Front_900x.jpg" alt="" />
+														<img src="{{ url_for('static', filename='img/product/ECAP-beige_Front_900x.jpg')}}" alt="" />
 														<!-- <img class="secondary-img" src="img/product/20.jpg" alt="" /> -->
 													</a>
 													<span class="tag-line">new</span>
@@ -804,7 +804,7 @@
 											<div class="single-product">
 												<div class="product-img">
 													<a href="product-details.html">
-														<img src="img/product/2213105_2213102_male_front_900x.jpg" alt="" />
+														<img src="{{ url_for('static', filename='img/product/2213105_2213102_male_front_900x.jpg')}}" alt="" />
 														<!-- <img class="secondary-img" src="img/product/18.jpg" alt="" /> -->
 													</a>
 													<span class="tag-line">new</span>
@@ -833,7 +833,7 @@
 											<div class="single-product">
 												<div class="product-img">
 													<a href="product-details.html">
-														<img src="img/product/BEIGERECARGOPANTSMENFRONT_900x.jpg" alt="" />
+														<img src="{{ url_for('static', filename='img/product/BEIGERECARGOPANTSMENFRONT_900x.jpg')}}" alt="" />
 														<!-- <img class="secondary-img" src="img/product/14.jpg" alt="" /> -->
 													</a>
 													<span class="tag-line">new</span>
@@ -862,7 +862,7 @@
 											<div class="single-product">
 												<div class="product-img">
 													<a href="product-details.html">
-														<img src="img/product/BEIGERECARGOVESTMENFRONT_900x.jpg" alt="" />
+														<img src="{{ url_for('static', filename='img/product/BEIGERECARGOVESTMENFRONT_900x.jpg')}}" alt="" />
 														<!-- <img class="secondary-img" src="img/product/15.jpg" alt="" /> -->
 													</a>
 													<span class="tag-line">new</span>
@@ -891,7 +891,7 @@
 											<div class="single-product">
 												<div class="product-img">
 													<a href="product-details.html">
-														<img src="img/product/BEIGEREFARIDTEEMENFRONT_900x.jpg" alt="" />
+														<img src="{{ url_for('static', filename='img/product/BEIGEREFARIDTEEMENFRONT_900x.jpg')}}" alt="" />
 														<!-- <img class="secondary-img" src="img/product/17.jpg" alt="" /> -->
 													</a>
 													<span class="tag-line">new</span>
@@ -920,7 +920,7 @@
 											<div class="single-product">
 												<div class="product-img">
 													<a href="product-details.html">
-														<img src="img/product/Black-Front-Edited_900x.jpg" alt="" />
+														<img src="{{ url_for('static', filename='img/product/Black-Front-Edited_900x.jpg')}}" alt="" />
 														<!-- <img class="secondary-img" src="img/product/11.jpg" alt="" /> -->
 													</a>
 													<span class="tag-line">new</span>
@@ -949,7 +949,7 @@
 											<div class="single-product">
 												<div class="product-img">
 													<a href="product-details.html">
-														<img src="img/product/DARKGREYREILDTEEMENFRONT_900x.jpg" alt="" />
+														<img src="{{ url_for('static', filename='img/product/DARKGREYREILDTEEMENFRONT_900x.jpg')}}" alt="" />
 														<!-- <img class="secondary-img" src="img/product/11.jpg" alt="" /> -->
 													</a>
 													<span class="tag-line">new</span>
@@ -1012,7 +1012,7 @@
 											<div class="single-product">
 												<div class="product-img">
 													<a href="product-details.html">
-										<img src="img/product/P201123084405-Fullbody-457_f38a602b-3222-468b-bcb8-27ee72698793_500x.jpg" alt="" />
+										<img src="{{ url_for('static', filename='img/product/P201123084405-Fullbody-457_f38a602b-3222-468b-bcb8-27ee72698793_500x.jpg')}}" alt="" />
 										<!-- <img class="secondary-img" src="img/product/7.jpg" alt="" /> -->
 									</a>
 													<span class="tag-line">new</span>
@@ -1042,7 +1042,7 @@
 											<div class="single-product">
 												<div class="product-img">
 													<a href="product-details.html">
-										<img src="img/product/Resort_DayOne-1605_500x.jpg" alt="" />
+										<img src="{{ url_for('static', filename='img/product/Resort_DayOne-1605_500x.jpg')}}" alt="" />
 										<!-- <img class="secondary-img" src="img/product/14.jpg" alt="" /> -->
 									</a>
 													<span class="tag-line">new</span>
@@ -1072,8 +1072,8 @@
 											<div class="single-product">
 												<div class="product-img">
 													<a href="product-details.html">
-														<img src="img/product/5.jpg" alt="" />
-														<img class="secondary-img" src="img/product/11.jpg" alt="" />
+														<img src="{{ url_for('static', filename='img/product/5.jpg')}}" alt="" />
+														<img class="secondary-img" src="{{ url_for('static', filename='img/product/11.jpg')}}" alt="" />
 													</a>
 													<span class="tag-line">new</span>
 												</div>
@@ -1102,8 +1102,8 @@
 											<div class="single-product">
 												<div class="product-img">
 													<a href="product-details.html">
-														<img src="img/product/6.jpg" alt="" />
-														<img class="secondary-img" src="img/product/11.jpg" alt="" />
+														<img src="{{ url_for('static', filename='img/product/6.jpg')}}" alt="" />
+														<img class="secondary-img" src="{{ url_for('static', filename='img/product/11.jpg')}}" alt="" />
 													</a>
 													<span class="tag-line">new</span>
 												</div>
@@ -1132,8 +1132,8 @@
 											<div class="single-product">
 												<div class="product-img">
 													<a href="product-details.html">
-														<img src="img/product/7.jpg" alt="" />
-														<img class="secondary-img" src="img/product/11.jpg" alt="" />
+														<img src="{{ url_for('static', filename='img/product/7.jpg')}}" alt="" />
+														<img class="secondary-img" src="{{ url_for('static', filename='img/product/11.jpg')}}" alt="" />
 													</a>
 													<span class="tag-line">new</span>
 												</div>
@@ -1162,8 +1162,8 @@
 											<div class="single-product">
 												<div class="product-img">
 													<a href="product-details.html">
-														<img src="img/product/8.jpg" alt="" />
-														<img class="secondary-img" src="img/product/11.jpg" alt="" />
+														<img src="{{ url_for('static', filename='img/product/8.jpg')}}" alt="" />
+														<img class="secondary-img" src="{{ url_for('static', filename='img/product/11.jpg')}}" alt="" />
 													</a>
 													<span class="tag-line">new</span>
 												</div>
@@ -1192,8 +1192,8 @@
 											<div class="single-product">
 												<div class="product-img">
 													<a href="product-details.html">
-														<img src="img/product/9.jpg" alt="" />
-														<img class="secondary-img" src="img/product/11.jpg" alt="" />
+														<img src="{{ url_for('static', filename='img/product/9.jpg')}}" alt="" />
+														<img class="secondary-img" src="{{ url_for('static', filename='img/product/11.jpg')}}" alt="" />
 													</a>
 													<span class="tag-line">new</span>
 												</div>
@@ -1222,8 +1222,8 @@
 											<div class="single-product">
 												<div class="product-img">
 													<a href="product-details.html">
-														<img src="img/product/10.jpg" alt="" />
-														<img class="secondary-img" src="img/product/11.jpg" alt="" />
+														<img src="{{ url_for('static', filename='img/product/10.jpg')}}" alt="" />
+														<img class="secondary-img" src="{{ url_for('static', filename='img/product/11.jpg')}}" alt="" />
 													</a>
 													<span class="tag-line">new</span>
 												</div>
@@ -1496,20 +1496,20 @@
 
 		<!-- all js here -->
 		<!-- jquery latest version -->
-        <script src="js/vendor/jquery-1.12.0.min.js"></script>
+        <script src="{{ url_for('static', filename='js/vendor/jquery-1.12.0.min.js')}}"></script>
 		<!-- bootstrap js -->
-        <script src="js/bootstrap.min.js"></script>
+        <script src="{{ url_for('static', filename='js/bootstrap.min.js')}}"></script>
 		<!-- owl.carousel js -->
-        <script src="js/owl.carousel.min.js"></script>
+        <script src="{{ url_for('static', filename='js/owl.carousel.min.js')}}"></script>
 		<!-- meanmenu js -->
-        <script src="js/jquery.meanmenu.js"></script>
+        <script src="{{ url_for('static', filename='js/jquery.meanmenu.js')}}"></script>
 		<!-- jquery-ui js -->
-        <script src="js/jquery-ui.min.js"></script>	
+        <script src="{{ url_for('static', filename='js/jquery-ui.min.js')}}"></script>	
 		<!-- wow js -->
-        <script src="js/wow.min.js"></script>
+        <script src="{{ url_for('static', filename='js/wow.min.js')}}"></script>
 		<!-- plugins js -->
-        <script src="js/plugins.js"></script>
+        <script src="{{ url_for('static', filename='js/plugins.js')}}"></script>
 		<!-- main js -->
-        <script src="js/main.js"></script>
+        <script src="{{ url_for('static', filename='js/main.js')}}"></script>
     </body>
 </html>

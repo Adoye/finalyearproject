@@ -13,25 +13,25 @@
 
 		<!-- all css here -->
 		<!-- bootstrap v3.3.6 css -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css')}}">
 		<!-- animate css -->
-        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.css')}}">
 		<!-- jquery-ui.min css -->
-        <link rel="stylesheet" href="css/jquery-ui.min.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/jquery-ui.min.css')}}">
 		<!-- meanmenu css -->
-        <link rel="stylesheet" href="css/meanmenu.min.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/meanmenu.min.css')}}">
 		<!-- owl.carousel css -->
-        <link rel="stylesheet" href="css/owl.carousel.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.css')}}">
 		<!-- nivo-slider css -->
-        <link rel="stylesheet" href="lib/css/nivo-slider.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='lib/css/nivo-slider.css')}}">
 		<!-- font-awesome css -->
-        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css')}}">
 		<!-- style css -->
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
 		<!-- responsive css -->
-        <link rel="stylesheet" href="css/responsive.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css')}}">
 		<!-- modernizr js -->
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <script src="{{ url_for('static', filename='js/vendor/modernizr-2.8.3.min.js')}}"></script>
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -49,7 +49,7 @@
 						<div class="row">
 							<div class="col-md-2 col-sm-4 col-xs-5">
 								<div class="logo">
-									<a href="index.html"><img src="img/Asset 2.png" alt="" /></a>
+									<a href="index.html"><img src="{{ url_for('static', filename='img/Asset 2.png')}}" alt="" /></a>
 								</div>
 							</div>
 							<div class="col-md-8 hidden-xs hidden-sm">
@@ -176,7 +176,7 @@
 									<ul>
 										<li>
 											<div class="cart-img">
-												<a href="#"><img alt="" src="img/cart/1.jpg"></a>
+												<a href="#"><img alt="" src="{{ url_for('static', filename='img/cart/1.jpg')}}"></a>
 											</div>
 											<div class="cart-info">
 												<h4><a href="#">Vestibulum suscipit</a></h4>
@@ -188,7 +188,7 @@
 										</li>
 										<li>
 											<div class="cart-img">
-												<a href="#"><img alt="" src="img/cart/1.jpg"></a>
+												<a href="#"><img alt="" src="{{ url_for('static', filename='img/cart/1.jpg')}}"></a>
 											</div>
 											<div class="cart-info">
 												<h4><a href="#">Vestibulum suscipit</a></h4>
@@ -549,19 +549,19 @@
 
 		<!-- all js here -->
 		<!-- jquery latest version -->
-        <script src="js/vendor/jquery-1.12.0.min.js"></script>
+        <script src="{{ url_for('static', filename='js/vendor/jquery-1.12.0.min.js')}}"></script>
 		<!-- bootstrap js -->
-        <script src="js/bootstrap.min.js"></script>
+        <script src="{{ url_for('static', filename='js/bootstrap.min.js')}}"></script>
 		<!-- owl.carousel js -->
-        <script src="js/owl.carousel.min.js"></script>
+        <script src="{{ url_for('static', filename='js/owl.carousel.min.js')}}"></script>
 		<!-- meanmenu js -->
-        <script src="js/jquery.meanmenu.js"></script>
+        <script src="{{ url_for('static', filename='js/jquery.meanmenu.js')}}"></script>
 		<!-- jquery-ui js -->
-        <script src="js/jquery-ui.min.js"></script>		
+        <script src="{{ url_for('static', filename='js/jquery-ui.min.js')}}"></script>		
 		<!-- wow js -->
-        <script src="js/wow.min.js"></script>
+        <script src="{{ url_for('static', filename='js/wow.min.js')}}"></script>
 		<!-- Google Map js -->
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBuU_0_uLMnFM-2oWod_fzC0atPZj7dHlU"></script>
+        <script src="{{ url_for('static', filename='https://maps.googleapis.com/maps/api/js?key=AIzaSyBuU_0_uLMnFM-2oWod_fzC0atPZj7dHlU')}}"></script>
 		<script>
 			function initialize() {
 			  var mapOptions = {
@@ -586,8 +586,8 @@
 			google.maps.event.addDomListener(window, 'load', initialize);
 		</script>			
 		<!-- plugins js -->
-        <script src="js/plugins.js"></script>
+        <script src="{{ url_for('static', filename='js/plugins.js')}}"></script>
 		<!-- main js -->
-        <script src="js/main.js"></script>
+        <script src="{{ url_for('static', filename='js/main.js')}}"></script>
     </body>
 </html>
