@@ -28,7 +28,11 @@ class UserForm(FlaskForm):
 class NamerForm(FlaskForm):
       name = StringField("What is your name", validators=[DataRequired()])
       submit =SubmitField("Submit")
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///users.db'
+
+# old sql
+# app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///users.db'
+# new sql
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:Qwerty@123@localhost/users'
 # initialize the db
 db = SQLAlchemy(app)
 
@@ -59,5 +63,4 @@ def shop():
 @app.route('/contact', methods=['GET', 'POST'])
 
 def contact():
-      form = UserForm()
-      return render_template("contact.html")
+     return render_template("contact.html")
