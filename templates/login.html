@@ -12,25 +12,25 @@
 
 		<!-- all css here -->
 		<!-- bootstrap v3.3.6 css -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
 		<!-- animate css -->
-        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.css') }}">
 		<!-- jquery-ui.min css -->
-        <link rel="stylesheet" href="css/jquery-ui.min.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/jquery-ui.min.css') }}">
 		<!-- meanmenu css -->
-        <link rel="stylesheet" href="css/meanmenu.min.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/meanmenu.min.css') }}">
 		<!-- owl.carousel css -->
-        <link rel="stylesheet" href="css/owl.carousel.css">
-		<!-- nivo-slider css -->
-        <link rel="stylesheet" href="lib/css/nivo-slider.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.css') }}">
+		<!-- slick css -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/slick.css') }}">
 		<!-- font-awesome css -->
-        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}">
 		<!-- style css -->
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 		<!-- responsive css -->
-        <link rel="stylesheet" href="css/responsive.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
 		<!-- modernizr js -->
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <script src="{{ url_for('static', filename='js/vendor/modernizr-2.8.3.min.js')}}"></script>
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -48,14 +48,14 @@
 						<div class="row">
 							<div class="col-md-2 col-sm-4 col-xs-5">
 								<div class="logo">
-									<a href="index.html"><img src="img/Asset 2.png" alt="" /></a>
+									<a href="{{ url_for('index')}}"><img src="{{ url_for('static', filename='img/Asset 2.png')}}" alt="" /></a>
 								</div>
 							</div>
 							<div class="col-md-8 hidden-xs hidden-sm">
 								<div class="main-menu">
 									<nav>
 										<ul>
-											<li><a href="index.html">home</a>
+											<li><a href="{{ url_for('index')}}">home</a>
 												<!--<ul>
 													<li><a href="index.html">home version 1</a></li>
 													<li><a href="index-2.html">home version 2</a></li>
@@ -64,7 +64,7 @@
 											</li>
 											<!-- <li><a href="about.html">about</a></li>
 											<li><a href="blog.html">blog</a></li>-->
-											<li class="static"><a href="shop.html">shop</a>
+											<li class="static"><a href="{{ url_for('shop')}}">shop</a>
 												<div class="mega-menu">
 													<div class="mega-left">
 														<!--<span>
@@ -159,7 +159,7 @@
 													<li><a href="404.html">404 error</a></li>
 												</ul>												
 											</li>-->											
-											<li><a href="contact.html">contact</a></li>
+											<li><a href="{{ url_for('contact')}}">contact</a></li>
 										</ul>
 									</nav>
 								</div>
@@ -175,7 +175,7 @@
 									<ul>
 										<li>
 											<div class="cart-img">
-												<a href="#"><img alt="" src="img/cart/1.jpg"></a>
+												<a href="#"><img alt="" src="{{ url_for('static', filename='img/cart/1.jpg')}}"></a>
 											</div>
 											<div class="cart-info">
 												<h4><a href="#">Vestibulum suscipit</a></h4>
@@ -187,7 +187,7 @@
 										</li>
 										<li>
 											<div class="cart-img">
-												<a href="#"><img alt="" src="img/cart/1.jpg"></a>
+												<a href="#"><img alt="" src="{{ url_for('static', filename='img/cart/1.jpg')}}"></a>
 											</div>
 											<div class="cart-info">
 												<h4><a href="#">Vestibulum suscipit</a></h4>
@@ -240,7 +240,7 @@
 							<div class="mobile-menu">
 								<nav id="dropdown">
 									<ul>
-										<li><a href="index.html">Home</a>
+										<li><a href="{{ url_for('index')}}">Home</a>
 											<!--<ul>
 												<li><a href="index.html">Homepage Version 1</a></li>
 												<li><a href="index-2.html">Homepage Version 2</a></li>
@@ -249,8 +249,8 @@
 										</li>
 										<!--<li><a href="about.html">About</a></li>
 										<li><a href="blog.html">blog</a></li>-->
-										<li><a href="shop.html">Shop</a>
-											<ul>
+										<li><a href="{{ url_for('shop')}}">Shop</a>
+											<!-- <ul>
 												<li><a href="#">WOMEN CLOTH</a>
 													<ul>
 														<li><a href="shop.html">casual shirt</a></li>
@@ -275,7 +275,7 @@
 														<li><a href="shop.html">nail set</a></li>
 													</ul>
 												</li>											
-											</ul>
+											</ul> -->
 										</li>
 										<!--<li><a href="shop.html">Footwear </a></li>
 										<li><a href="#">Pages</a>
@@ -299,7 +299,7 @@
 												<li><a href="404.html">404 error</a></li>
 											</ul>
 										</li>-->
-										<li><a href="contact.html">Contact</a></li>
+										<li><a href="{{ url_for('contact')}}">Contact</a></li>
 									</ul>
 								</nav>
 							</div>					
@@ -579,7 +579,7 @@
 
 
 <!-- Modal -->
-<div class="modal fade" id="productModal" tabindex="-1" role="dialog" aria-labelledby="productModalLabel">
+{% comment %} <div class="modal fade" id="productModal" tabindex="-1" role="dialog" aria-labelledby="productModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -595,24 +595,24 @@
       </div>
     </div>
   </div>
-</div>	
+</div>	 {% endcomment %}
 
 		<!-- all js here -->
 		<!-- jquery latest version -->
-        <script src="js/vendor/jquery-1.12.0.min.js"></script>
+        <script src="{{ url_for('static', filename='js/vendor/jquery-1.12.0.min.js')}}"></script>
 		<!-- bootstrap js -->
-        <script src="js/bootstrap.min.js"></script>
+        <script src="{{ url_for('static', filename='js/bootstrap.min.js')}}"></script>
 		<!-- owl.carousel js -->
-        <script src="js/owl.carousel.min.js"></script>
+        <script src="{{ url_for('static', filename='js/owl.carousel.min.js')}}"></script>
 		<!-- meanmenu js -->
-        <script src="js/jquery.meanmenu.js"></script>
+        <script src="{{ url_for('static', filename='js/jquery.meanmenu.js')}}"></script>
 		<!-- jquery-ui js -->
-        <script src="js/jquery-ui.min.js"></script>		
+        <script src="{{ url_for('static', filename='js/jquery-ui.min.js')}}"></script>
 		<!-- wow js -->
-        <script src="js/wow.min.js"></script>
+        <script src="{{ url_for('static', filename='js/wow.min.js')}}"></script>
 		<!-- plugins js -->
-        <script src="js/plugins.js"></script>
+        <script src="{{ url_for('static', filename='js/plugins.js')}}"></script>
 		<!-- main js -->
-        <script src="js/main.js"></script>
+        <script src="{{ url_for('static', filename='js/main.js')}}"></script>
     </body>
 </html>
