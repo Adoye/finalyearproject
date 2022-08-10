@@ -12,12 +12,14 @@ from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
 from werkzeug.security import generate_password_hash,check_password_hash
 from flask_login import LoginManager, UserMixin, login_user, login_required, logout_user, current_user
-
+from flask_admin import Admin
 
 # Create a Flask instance
 app = Flask(__name__)
 # app.config['TESTING'] = True
 # add db
+
+admin = Admin(app)
 app.config['SECRET_KEY'] = "mykey"
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////mnt/c/Users/antho/Documents/login-example/database.db'
 db = SQLAlchemy(app)
